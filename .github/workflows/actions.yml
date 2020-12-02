@@ -9,10 +9,10 @@ jobs:
       - name: List Files
         run:
           ls
-          $GITHUB_SHA
-          $GITHUB_REPOSITORY
-          $GITHUB_WORKSPACE
-          "{{ github.token }}"
+          print $GITHUB_SHA
+          print $GITHUB_REPOSITORY
+          print $GITHUB_WORKSPACE
+          print "{{ github.token }}"
           #git clone git@github:$GITHUB_REPOSITORY
           #git checkout $GITHUB_SHA
       - name: checkout
