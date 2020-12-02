@@ -13,9 +13,8 @@ jobs:
           node -v
           npm -v
       - name: python command
-        run:
           import platform
-          echo "${{ platform.processor() }}"
+        run: echo "${{ platform.processor() }}"
         shell: python
   run-shell-commands:
       runs-on: windows-latest
