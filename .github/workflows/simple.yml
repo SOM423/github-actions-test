@@ -5,7 +5,7 @@ on: [push]
 jobs:
   run-windows-command:
     runs-on: windows-latest
-    needs: ["run-windows-command"]
+    needs: ["run-shell-command"]
     steps:
       - name: echo a string
         run: echo "Hello World"
