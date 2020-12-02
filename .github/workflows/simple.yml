@@ -3,7 +3,7 @@ name: shell commands
 on: [push]
 
 jobs:
-  run-shell-command:
+  run-windows-command:
     runs-on: windows-latest
     steps:
       - name: echo a string
