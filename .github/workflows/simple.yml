@@ -14,8 +14,8 @@ jobs:
           npm -v
       - name: python command
         run:
-          import platform
-          #print(p.processor())
+          import platform &&
+          print(p.processor())
         shell: python
   run-shell-commands:
       runs-on: windows-latest
